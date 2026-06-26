@@ -1,0 +1,87 @@
+Here are 5 common IT job roles and what each does:
+
+Software Developer – Writes, tests, and maintains code to create software applications and programs.
+
+Network Administrator – Oversees computer networks, installs/configures network systems, and monitors network performance.
+
+Database Administrator – Organizes and tracks data using specialized software, ensuring data is safe, accessible, and secure.
+
+Information Security Analyst – Protects an organization's sensitive data by designing and deploying security measures to prevent hacker access.
+
+Systems Analyst – Reviews design components and uses IT knowledge to solve business problems, identifying infrastructure changes to streamline operations.
+
+
+
+List 3 product companies and 3 service companies with one example of work each does
+
+| Company   | One Example of Work                                                               |
+| --------- | --------------------------------------------------------------------------------- |
+| Microsoft | Creates and sells Microsoft Teams globally bosscoderacademy+1                     |
+| Google    | Builds Google Search, Android OS, and Google Cloud bosscoderacademy+1             |
+| Amazon    | Develops Amazon.com e-commerce platform and AWS cloud services bosscoderacademy+1 |
+
+| Company                         | One Example of Work                                                                      |
+| ------------------------------- | ---------------------------------------------------------------------------------------- |
+| Infosys                         | Provides IT solutions and support to various businesses instagram+1                      |
+| TCS (Tata Consultancy Services) | Offers IT consulting, software development, and business consulting services instagram+1 |
+| Wipro                           | Delivers IT services, consulting, and business solutions to clients instagram+1          |
+
+
+
+
+
+Write the full forms and one-line use of: GitHub, Slack, Jira, IDE, API.
+
+
+GitHub
+
+Full form: Not an acronym — the name combines "Git" (the version control system) and "Hub" (a central gathering place).
+
+Use: A platform for hosting, version-controlling, and collaborating on code repositories.
+Slack
+
+Full form: Not an acronym — sometimes informally expanded as "Searchable Log of All Conversation and Knowledge," though that's a backronym coined after the name was chosen, not the original meaning.
+
+Use: A team messaging app for real-time chat, file sharing, and workplace collaboration.
+Jira
+
+Full form: Not an acronym — derived from "Gojira," the Japanese name for Godzilla (a nod to its predecessor tool, Bugzilla).
+
+Use: A project management and issue-tracking tool used for planning, assigning, and monitoring tasks (especially in software development).
+IDE
+
+Full form: Integrated Development Environment
+
+Use: A software application that combines a code editor, debugger, and build tools to help developers write and test code efficiently.
+API
+
+Full form: Application Programming Interface
+
+Use: A set of rules that lets different software applications communicate and exchange data with each other.
+
+
+
+
+
+Name any 5 programming languages and mention one popular use case for each.
+
+
+Python – Widely used for data science and machine learning, thanks to libraries like Pandas, NumPy, and TensorFlow.
+JavaScript – Powers interactive front-end web development, making websites dynamic (e.g., dropdown menus, form validation, live updates).
+Java – Commonly used for building large-scale enterprise applications and Android mobile apps.
+C++ – Preferred for performance-critical software like video game engines and real-time systems, where speed and memory control matter.
+SQL – Used for querying and managing data in relational databases, such as retrieving customer records from a company's database.
+
+
+
+
+
+
+What is the difference between a developer and a tester? Answer in 2 lines.
+
+
+A **developer** writes the code that builds the software's features and functionality, focusing on *creating* the product.
+
+A **tester** examines that code for bugs, errors, and usability issues, focusing on *verifying* the product works correctly before it reaches users.
+
+
