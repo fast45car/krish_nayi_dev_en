@@ -1,0 +1,90 @@
+1.Declare variables for a Flipkart product: productName (as a string), price (float), and rating (double). Assign sample values and print each variable with its data type.
+
+#include <stdio.h>
+
+int main(){
+char company[20] = "iphone";
+float price = 125000;
+double rating = 45;
+
+printf("\nproduct :  %s",company);
+printf("\nprice : %f",price);
+printf("\nrating : %lf",rating);
+}
+
+
+output --
+product :  iphone
+price : 125000.000000
+rating : 45.000000
+
+=== Code Execution Successful ===
+
+
+
+2.Create a constant variable to store the GST rate (for example, 18%) and use it to calculate the final price of a Zomato order with a given base price. Constraint The GST rate must not be changeable after its initial assignment.
+
+>>
+#include<stdio.h>
+#include<conio.h>
+
+void main(){
+float amount;
+
+float price;
+float rating = 18;
+
+
+ printf("enter the gast amount : ");
+ scanf("%f",&price);
+ 
+ 
+
+ 
+ amount = price * rating / 100;
+ 
+ printf("\n your Gst rate is : %.2f",amount);
+ 
+ return 0;
+}
+
+
+
+
+3.Write a program that stores your favorite Spotify playlist's name (string), total number of songs (int), and average song duration in minutes (float). Print all values in a single formatted sentence.
+
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+
+void main(){
+	char song[50] = "sanam teri kasm";
+	int play = 15;
+	float duration = 4.45;
+	
+	printf("song name %s  total number of songs %d   average song duration in minutes %f",song,play,duration);
+	return 0;
+}
+
+
+
+4.Identify and correct the invalid variable names from this list: 1stPlayer, player_age, $score, total-marks, userName.Hint: Apply standard variable naming rules for your programming language.
+
+
+#include<stdio.h>
+#include<conio.h>
+
+
+void main(){
+	char name[20] = "Virat";
+	int matchs = 120;
+	int score = 15233;
+	char username[20] = "chiku bhai";
+	
+	printf("\nthe name  %s",name);
+	printf("\nmatchs  : %d",matchs);
+	printf("\nthe score  : %d",score);
+	printf("\nusername is %s",username);
+	
+	return 0;
+}
