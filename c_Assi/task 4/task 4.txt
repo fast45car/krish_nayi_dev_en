@@ -1,0 +1,202 @@
+1.Create a simple JavaScript function called calculateTotal that takes two numbers: itemPrice and quantity, and returns the total bill amount using arithmetic operators.
+
+>>
+#include<stdio.h>
+#include<conio.h>
+
+
+int main(){
+	char name[20];
+	int product;
+	int Quantity;
+	int sum;
+	int total;
+	
+	char secondname[20];
+	int secondproduct, secondQuantity,meta;
+	
+	char thardname[20];
+	int thardproduct, thardQuantity,bill; 
+	
+    printf("enter the product name : ");
+    scanf("%s",&name);
+    
+    printf("\nenter the price : ");
+    scanf("%d",&product);
+    
+    printf("\nenter the Qantity : ");
+    scanf("%d",&Quantity);
+   
+   sum =  product * Quantity;
+   printf("\nbill add count :%d",sum);
+   
+   
+   
+   
+   
+   printf("\nenter the second product name : ");
+    scanf("%s",&secondname);
+    
+    printf("\nenter the price : ");
+    scanf("%d",& secondproduct);
+    
+    printf("\nenter the Qantity : ");
+    scanf("%d",& secondQuantity);
+   
+   meta = secondproduct * secondQuantity;
+   printf("\nbill add count :%d",meta);
+   
+   
+   
+   printf("\nenter the thard product name : ");
+    scanf("%s",&thardname);
+    
+    printf("\nenter the price : ");
+    scanf("%d",&thardproduct);
+    
+    printf("\nenter the Qantity : ");
+    scanf("%d",&thardQuantity);
+   
+   bill =  thardproduct * thardQuantity;
+   printf("\nbill add count :%d",bill);
+   
+   total = sum + meta + bill;
+   printf("\nthe final  total is :%d",total);
+   return 0;
+}
+
+2.Build a Flipkart-style discount calculator: given product price, discount percentage, and a boolean isMember, use arithmetic and logical operators to calculate the final price (apply an extra 5% off if isMember is true).
+
+#include<stdio.h>
+#include<conio.h>
+
+void main(){
+	int price;
+	int percentage;
+	int next;
+	int sum;
+	int bill;	
+	
+	printf("enter the product price : ");
+	scanf("%d",&price);
+	
+	printf("enter the percentage diccount : ");
+	scanf("%d",&percentage);
+	
+	printf("Is member? (1 for Yes, 0 for No): ");
+	scanf("%d",&next);
+	sum = price * percentage /100;
+	
+	bill = price - sum;
+	
+	
+	if(next == 1){
+		printf("the price is : %d",price);
+		printf("\nthe discouunt is : %d",sum);
+		printf("\nthe percentage is : %d",percentage);
+		printf("\nthe final bill is : %d",bill);
+	}
+	else if(next == 0){
+			printf("\nthe price is : %d",price);
+			printf("\nnot the add discouunt");
+	}
+	return 0;	
+}
+
+
+
+3.Write a function isEligibleForOffer that takes a user's age and total order value, and returns true if the user is 18 or older AND the order value is above 500, otherwise false.<br><br><em><strong>Hint:</strong> Use relational and logical operators together
+
+#include<stdio.h>
+#include<conio.h>
+
+void main(){
+	int age;
+	int oder;
+	int value = 800;
+	int main  = 500;
+	printf("enter the age : ");
+	scanf("%d",&age);
+	
+	printf("enter the ordervalue : ");
+	scanf("%d",&oder);
+	
+	if(age >= 20){
+		printf("\nthe oder is :%d",oder);
+		printf("\nthe value oderby Eligible for offer");
+	}
+	else if(age < 20){
+		printf("\nthe oder is :%d",main);
+		printf("\nyour are not Eligible");
+	}
+	return 0;
+}
+
+
+
+4.Given three variables: likes, comments, and shares (all numbers), write code to check if a post is 'trending' on Instagram (at least 1000 likes OR more than 200 comments AND at least 50 shares). Print the result.
+
+
+
+#include<stdio.h>
+#include<conio.h>
+
+void main(){
+	int like;
+	int comment;
+	int share;
+	
+	printf("enter the like : ");
+	scanf("%d",&like);
+	
+	printf("enter the comment : ");
+	scanf("%d",&comment);
+	
+	printf("enter the share : ");
+	scanf("%d",&share);
+	
+	
+	if(like >= 1000 && comment >= 300 && share >= 450){
+		printf("the reel is Tranding");
+	}
+	
+	else if(like <= 1000 && comment <= 300 && share <= 450){
+		printf("You are growing for the Trand journey");
+	}
+	
+	else if(like <= 200 && comment <= 60 && share <= 30){
+		printf("the reel is nor tranding");
+	}
+	return 0;
+}
+
+
+
+
+5.Write a code snippet that demonstrates the difference between pre-increment (++count) and post-increment (count++) by logging the values before and after using both on a followerCount variable.
+
+#include<stdio.h>
+#include<conio.h>
+
+int main(){
+	int a = 10;
+	int b = a++;
+	
+	printf("the increment %d",a,b);
+	
+	return 0;
+}
+
+
+#include<stdio.h>
+#include<conio.h>
+
+int main(){
+	int a = 75;
+	int b = ++a;
+	
+	printf("the post increment %d",a,b);
+
+
+     return 0;
+}
