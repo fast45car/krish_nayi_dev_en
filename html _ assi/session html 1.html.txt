@@ -1,0 +1,148 @@
+1.Open Instagram's home page in Chrome, right-click on a post image, and use Inspect Element to find the exact HTML tag and CSS class used for the image container. Write down the tag name and class.
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>tag name is : div</h1>
+    <h1>tag class name is : _aagu</h1>
+    <img alt="Photo by King Kohli on August 02, 2026. May be an image of cricket, poster, sport equipment and text that says &quot;Last 2027 ODI World Cup. Let'sOneLastTime. Let's One Last Time. ONE OF THEM GONNA WEAR THE BLUE FOR LAST TIME LET'S WITNESS THEIR ONE LAST DANCE. INDI 18 INDIA INDIA INDIA VIRAT 8&quot;."
+        class="x5yr21d xu96u03 x10l6tqk x13vifvy x87ps6o xh8yej3" crossorigin="anonymous"
+        src="https://instagram.fraj3-3.fna.fbcdn.net/v/t51.82787-15/763129266_17961699264188749_65600801694665213_n.jpg?stp=dst-jpg_e35_tt6&amp;_nc_cat=104&amp;ig_cache_key=Mzk1NTI3Mzg1MjU3ODExMDY2NQ%3D%3D.3-ccb7-5&amp;ccb=7-5&amp;_nc_sid=58cdad&amp;efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQueHBpZHMuMTU3Mi5zZHIucmVndWxhcl9waG90by5DMyJ9&amp;_nc_ohc=SgHS3f7IlCwQ7kNvwFHMo09&amp;_nc_oc=AdrlbOTO3rPPLFb__OqsB26AUIyvG-5ZC5LKUCxAU5YL4Lt9IGNYbSBJw4QWQap2QfA&amp;_nc_ad=z-m&amp;_nc_cid=0&amp;_nc_zt=23&amp;_nc_ht=instagram.fraj3-3.fna&amp;_nc_gid=x2eNmELCFXAxT_ZpfsSivw&amp;_nc_ss=7a22e&amp;oh=00_AQFtr4zZpcIto-oMzlagAT7EfAERy3939G2YAZr42JcTEw&amp;oe=6A77ACB8"
+        style="object-fit: cover;">
+</body>
+
+</html>
+
+
+
+
+
+2.Create a simple HTML file named myprofile.html that displays your name, a short bio, and a profile picture using appropriate HTML tags (h1, p, img). Open it in your browser and view the result.
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 100px;
+            height: 130px;
+        }
+    </style>
+</head>
+<body>
+   <div class="main">
+   <img src="https://pbs.twimg.com/media/G-ngkeNbQAAUllp.jpg" alt="">
+   <h1>My name is Virat Kohli</h1>
+   <h3>I am a professional international cricketer from India</h3>
+   <h3>I have also served as the captain of the Indian national cricket team across all formats</h3>
+   <h4>I specialize as a top-order batsman</h4>
+   <h4>as well as playing for Royal Challengers Bengaluru (RCB)</h4>
+   
+
+   </div>
+</body>
+</html>
+
+
+3.Use Chrome DevTools to change the background color of your name (in myprofile.html) to any color you like, live in the browser, without editing the HTML file.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .box{
+            background-color: blue;
+            width: 100%;
+            height: 45vh;
+        }
+    </style>
+    <div class="box">
+        
+    </div>
+</body>
+</html>
+
+4.Draw a diagram or write a list showing the DOM structure (parent-child relationships) of your myprofile.html page. Include at least 3 levels (html > body > your content).
+
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 90vh;
+        }
+
+        .container {
+            width: 45%;
+            height: 60vh;
+            border: solid 2px black;
+        }
+
+        .main {
+            width: 45%;
+            height: 30vh;
+            border: 2px solid black;
+        }
+
+        .m1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        
+        }
+        .m2{
+            width: 25%;
+            height: 10vh;
+            border: 2px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        
+        }
+    </style>
+
+    <body>
+        <div class="container">
+            <div class="m1">
+
+                <div class="main">
+                    <div class="box">
+                </div>
+                <div class="m2">
+                    
+        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    </html>
