@@ -1,0 +1,94 @@
+1.Install GCC on your computer and verify the installation by running gcc --version in your terminal or command prompt.
+
+>>Here's how to install GCC and verify it, based on your operating system:
+
+**Windows:**
+1. Download MinGW-w64 from https://www.mingw-w64.org/downloads/ (or use MSYS2, which is the easier route: https://www.msys2.org/)
+2. If using MSYS2: install it, open the MSYS2 terminal, and run:
+   ```
+   pacman -S mingw-w64-ucrt-x86_64-gcc
+   ```
+3. Add the `bin` folder (e.g., `C:\msys64\ucrt64\bin`) to your system PATH via Environment Variables
+4. Open a new Command Prompt and run:
+   ```
+   gcc --version
+   ```
+
+**macOS:**
+1. Open Terminal and run:
+   ```
+   xcode-select --install
+   ```
+2. This installs Apple's Command Line Tools, which includes a `gcc` command (technically aliased to Clang, but works for compiling C/C++)
+3. Verify with:
+   ```
+   gcc --version
+   ```
+4. For "real" GCC (not the Clang alias), install via Homebrew:
+   ```
+   brew install gcc
+   ```
+   then use `gcc-13` (or similar versioned name) to invoke it.
+
+**Linux (Ubuntu/Debian):**
+1. Open a terminal and run:
+   ```
+   sudo apt update
+   sudo apt install build-essential
+   ```
+2. Verify with:
+   ```
+   gcc --version
+   ```
+
+**Linux (Fedora/RHEL):**
+```
+sudo dnf install gcc
+gcc --version
+```
+
+**Expected output** after a successful install looks something like:
+```
+gcc (Ubuntu 13.2.0-4ubuntu3) 13.2.0
+Copyright (C) 2023 Free Software Foundation, Inc.
+```
+
+If `gcc --version` gives a "command not found" error after installing, it's almost always a PATH issue — double check the install location is added to your system PATH and restart your terminal.
+
+If you run into an error at any step, paste it here and I can help you debug it.
+
+
+
+
+
+2.Open VS Code or DevC++ and create a new file named hello.c. Write a C program that prints 'Hello, Instagram World!' to the console.
+#include <stdio.h>
+
+void main(){
+    printf("hello world");
+}
+
+
+
+3.Identify and label the header, main function, and return statement in your hello.c program using comments.
+
+// header: includes the Standard Input Output library for printf()
+#include <stdio.h>
+
+// main function: entry point of the program
+int main(void) {
+    printf("Hello, World!\n");
+    
+    // return statement: indicates successful termination to the operating system
+    return 0;
+}
+
+
+
+4.Compile your hello.c file using the GCC command line (gcc hello.c -o hello) and run the output file to display the message in your terminal.<br><br><em><strong>Hint: On Windows, the output file will be hello.exe; on Linux/Mac, it will be hello.
+
+cd path/to/your/project
+
+gcc hello.c -o hello
+
+Hello, World!

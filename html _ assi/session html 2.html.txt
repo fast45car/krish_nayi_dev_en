@@ -1,0 +1,162 @@
+1.Create a new HTML file called foodie-profile.html with the full HTML5 boilerplate structure (<!DOCTYPE html>, <html>, <head>, <body>), and set the title to 'My Foodie Profile'.
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Foodie Profile</title>
+</head>
+<body>
+    <!-- Visible content goes here -->
+</body>
+</html>
+
+
+
+2.Inside foodie-profile.html, add headings and paragraphs to introduce yourself as a food lover, including your favorite cuisine and a short story about your best meal.
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie Profile</title>
+</head>
+<body>
+    <h1>Welcome to My Foodie Profile</h1>
+    <p>Hello! I am a passionate food lover who enjoys exploring flavors from around the world. Food is not just sustenance for me; it's an experience that brings people together.</p>
+
+    <h2>My Favorite Cuisine</h2>
+    <p>If I had to choose one, it would definitely be Italian cuisine. The combination of fresh ingredients, rich flavors, and the art of cooking makes it truly special. From pasta to pizza, each dish tells a story.</p>
+
+    <h2>A Meal to Remember</h2>
+    <p>The best meal I ever had was at a small family-run trattoria in Rome. The handmade pasta was so delicious that I still dream about it today. The simplicity of the dish, combined with the ambiance of the restaurant and the warmth of the family who owned it, made it an unforgettable experience.</p>
+</body>
+</html>
+
+3.Add an unordered list of your top 5 favorite dishes (like you'd see on Zomato), and a numbered list of 3 restaurants you want to try next.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Foodie Profile</title>
+</head>
+<body>
+
+    <h1>My Favorite Dishes</h1>
+    <ul>
+        <li>Sushi</li>
+        <li>Margherita Pizza</li>
+        <li>Tacos al Pastor</li>
+        <li>Butter Chicken</li>
+        <li>Ramen</li>
+    </ul>
+
+    <h2>Restaurants I Want to Try Next</h2>
+    <ol>
+        <li>The Gourmet Kitchen</li>
+        <li>Oceanic Seafood</li>
+        <li>Skyline Bistro</li>
+    </ol>
+
+    <system_reminder>Current date: 05:50 PM Thursday, August 27, 2026 [Asia/Calcutta; -330]</system_reminder>
+
+</body>
+</html>
+
+
+
+5.Create a table that compares 3 food delivery apps (e.g., Zomato, Swiggy, Uber Eats) with columns for App Name, Delivery Charges, and Rating. Fill in sample data for each.
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>foodie profile</title>
+</head>
+<style>
+    table{
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    th,td{
+        padding: 5px;
+        text-align: center;
+    }
+</style>
+<body>
+    <div class="contaiber">
+
+        <h1>Welcome to My Foodie Profile</h1>
+        <p>Hello! I am a passionate food lover who enjoys exploring flavors from around the world. Food is not just
+            sustenance for me; it's an experience that brings people together.</p>
+
+        <ul>
+            <li>Sushi</li>
+            <li>Margherita Pizza</li>
+            <li>Tacos al Pastor</li>
+            <li>Butter Chicken</li>
+            <li>Ramen</li>
+        </ul>
+        <img src="https://img.magnific.com/free-photo/penne-pasta-tomato-sauce-with-chicken-tomatoes-wooden-table_2829-19739.jpg?semt=ais_hybrid&w=740&q=80"
+            alt="">
+    </div>
+
+
+    <table border="2">
+        <tr>
+            <th>componets</th>
+            <th>Zoometo rs</th>
+            <th> Swiggy rs</th>
+        </tr>
+        <tr>
+            <th>foodie item</th>
+            <td>1045</td>
+            <td>1045</td>
+        </tr>
+        <tr>
+            <th> Delivery</th>
+            <td>37</td>
+            <td>35</td>
+        </tr>
+        <tr>
+            <th> Gst</th>
+            <td>127</td>
+            <td>129</td>
+        </tr>
+        <tr>
+            <th> Platform fee </th>
+            <td>2</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <th> Feeding India </th>
+            <td>3</td>
+            <td>0</td>
+        </tr>
+
+        <tr>
+            <th> Tip to rider </th>
+            <td>30</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <th> Total </th>
+            <td>1244</td>
+            <td>1241</td>
+        </tr>
+
+    </table>
+</body>
+
+</html>
