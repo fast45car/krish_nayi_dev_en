@@ -1,0 +1,130 @@
+1.Write a short paragraph in your own words defining what a 'program' is and give one real-life example from any app you use daily (like Instagram, Zomato, or Paytm).
+
+>>
+A program is essentially a precise set of step-by-step instructions written in a language a computer can understand, telling it exactly how to execute a specific task. Think of it as a detailed recipe that guides the machine from a starting point to a desired outcome without any guesswork. A simple real-life example of this can be found in Instagram: when you double-tap your screen to like a photo, a tiny program instantly recognizes those two rapid touches, triggers the little heart animation to appear on your display, and communicates with the app's database to permanently register your "like" on that specific post.
+
+
+
+2.List three popular programming languages you have heard of, and for each, mention whether it is usually compiled, interpreted, or can be both Think of languages like Java, Python, and JavaScript.
+
+Python: This language is usually interpreted. It uses an interpreter that reads and executes the code line by line at runtime,
+which makes it highly flexible and easy to test, though it can be slightly slower in execution.
+
+JavaScript: This language is primarily interpreted. Web browsers contain built-in JavaScript engines (like V8 in Chrome) that interpret and run the
+code on the fly to create interactive web pages, though modern engines often use Just-In-Time (JIT) compilation behind the scenes to speed things up.
+
+Java: This language can be both (it uses a hybrid approach). First, Java code is compiled into an intermediate language called bytecode. Then, this bytecode is interpreted 
+(and further compiled on the fly by the Java Virtual Machine) to run on any operating system, giving Java its famous "write once, run anywhere" capability.
+
+
+3. Draw a flowchart (on paper or using any online tool) for the process of booking a movie ticket on BookMyShow, starting from opening the app to receiving the booking confirmation.
+
+>>
+┌─────────┐
+                              │  START  │
+                              └────┬────┘
+                                   │
+                                   ▼
+                        ┌─────────────────────┐
+                        │      Open app       │
+                        │  Select/confirm city │
+                        └──────────┬──────────┘
+                                   │
+                                   ▼
+                        ┌─────────────────────┐
+                        │   Browse or search   │
+                        │   Find desired movie │
+                        └──────────┬──────────┘
+                                   │
+                                   ▼
+                        ┌─────────────────────┐
+                        │     Select movie     │
+                        │  View details/trailer│
+                        └──────────┬──────────┘
+                                   │
+                                   ▼
+                        ┌─────────────────────┐
+                        │    Choose cinema     │
+                        │ Select date/showtime │
+                        └──────────┬──────────┘
+                                   │
+                                   ▼
+                        ┌─────────────────────┐
+                        │     Select seats     │
+                        │  Choose number/type  │
+                        └──────────┬──────────┘
+                                   │
+                                   ▼
+                        ┌─────────────────────┐
+                        │ Add food & beverages │
+                        │    (Optional step)   │
+                        └──────────┬──────────┘
+                                   │
+                                   ▼
+                        ┌─────────────────────┐
+                        │  Review order summary│
+                        │  Seats, price, offers│
+                        └──────────┬──────────┘
+                                   │
+                                   ▼
+                        ┌─────────────────────┐◄──────────────┐
+                        │  Proceed to payment  │               │
+                        │   Card, UPI, wallet  │               │
+                        └──────────┬──────────┘               │
+                                   │                            │
+                                   ▼                            │
+                              ╱───────────╲                     │
+                             ╱   Payment    ╲    No             │
+                            ╱   successful?  ╲──────────►┌─────────────┐
+                            ╲                ╱            │Payment failed│
+                             ╲              ╱             │Retry payment │
+                              ╲───────────╱               └─────────────┘
+                                   │
+                                   │ Yes
+                                   ▼
+                        ┌─────────────────────┐
+                        │   Booking confirmed  │
+                        │   E-ticket generated │
+                        └──────────┬──────────┘
+                                   │
+                                   ▼
+                        ┌─────────────────────┐
+                        │ Receive confirmation │
+                        │   Email, SMS, app    │
+                        └──────────┬──────────┘
+                                   │
+                                   ▼
+                              ┌─────────┐
+                              │   END   │
+                              └─────────┘
+
+4.Write down the steps (as an algorithm, using simple numbered instructions) for ordering food on Swiggy — from opening the app to completing payment.
+
+>>Open the Swiggy app on your smartphone.
+
+Verify your current location is correct at the top of the screen, or tap the location bar to manually enter your exact delivery address.
+
+Browse the homepage for food options, or tap the search bar to look for a specific restaurant or dish.
+
+Tap on the restaurant of your choice to open its menu.
+
+Browse the menu categories and tap the "ADD" button next to the items you want to order.
+
+If applicable, tap on the added item in your cart to select a specific quantity, portion size, or special instructions, then confirm.
+
+Once all desired items are added, tap the "View Cart" button or the cart icon at the bottom right of the screen.
+
+Review your order to ensure the items, quantities, and instructions are correct.
+
+Apply any promo codes or coupons in the designated "Enter Promo Code" box if you have them.
+
+Tap the "Proceed to Pay" button at the bottom of the screen.
+
+Select your preferred payment method (e.g., UPI, Credit/Debit Card, Net Banking, Cash on Delivery, or Swiggy Money).
+
+Follow the on-screen prompts to complete the payment authorization (such as entering your UPI PIN or OTP).
+
+Wait for the screen to display the "Order Placed Successfully" message and note the estimated delivery time.
+
+
+	 	
