@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let use1 = "priya";
+        let use2 = use1;
+        use1 = "smriti";
+
+        console.log("the name is ", use1);
+
+        krish = "maiya"
+        console.log("the name is ", krish);
+
+
+        let lemd = ["instagrame ", "spotify", "jio savan"]
+        let many = lemd
+        console.log(many)
+
+      
+    </script>
+</body>
+
+</html>
