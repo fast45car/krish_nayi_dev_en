@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<style>
+    body {
+        background: linear-gradient(75deg, #ffffff, #4c00ff);
+
+    }
+
+    #us {
+        margin: 5px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+    }
+
+    .conatainer {
+        border: solid 2px rgb(0, 0, 0);
+        padding: 20px;
+        width: 30%;
+        box-sizing: border-box;
+        background-color: white;
+        background: linear-gradient(71deg, #bd0000, #4c00ff);
+        border-radius: 30px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.779);
+        border: none;
+        color: white;
+    }
+
+    h1 {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: center;
+        max-width: 500px;
+    }
+
+    input,
+    label {
+        margin: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    input {
+        padding: 7px;
+        width: 90%;
+        border: solid 1px blue;
+        border-radius: 13px;
+    }
+
+
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 90vh;
+    }
+
+    .main {
+        width: 50%;
+    }
+</style>
+
+<body>
+    <div class="conatainer">
+
+        <h1> Register validation form</h1>
+        <table>
+
+            <form action="" onsubmit="return returnvalidation()">
+                <tr>
+
+                    <div>
+                        <td>
+                            <label for="">Name</label>
+                        </td>
+
+                        <td>
+
+                            <input type="text" name="" id="user">
+                        </td>
+                        <td><span id="us"></span></td>
+                    </div>
+                </tr>
+                </tr>
+                <tr>
+
+                    <div>
+
+                        <td><label for="">username</label></td>
+                        <td><input type="username" name="" id="sumr"></td>
+                        <td><span id="sum"></span></td>
+                    </div>
+
+                </tr>
+                <tr>
+
+                    <div>
+
+                        <td><label for="">email</label></td>
+                        <td><input type="email" name="" id="mail"></td>
+                        <td><span id="em"></span></td>
+                    </div>
+                </tr>
+
+                <tr>
+
+                    <div>
+
+                        <td><label for="">password</label></td>
+                        <td><input type="password" name="" id="psw"></td>
+                        <td><span id="ps"></span></td>
+                    </div>
+                </tr>
+
+                <tr>
+                    <div>
+
+                        <td><label for=""> confrom password</label></td>
+                        <td><input type="password" name="" id="cps"></td>
+                        <td><span id="cp"></span></td>
+                    </div>
+
+                </tr>
+                <tr>
+
+                    <div>
+
+                        <td><label for="">phon</label></td>
+                        <td><input type="phone" name="" id="phone"></td>
+                        <td><span id="ph"></span> </td>
+                    </div>
+
+                </tr>
+                <tr>
+
+                    <td><input class="main" type="submit"></td>
+                </tr>
+            </form>
+        </table>
+    </div>
+
+    <script>
+
+
+        let user_tag = document.getElementById("user")
+        let us = document.getElementById("us")
+
+        let sumr = document.getElementById("sumr")
+        let sum = document.getElementById("sum")
+
+        let mail = document.getElementById("mail")
+        let em = document.getElementById("em")
+
+        let psw = document.getElementById("psw")
+        let ps = document.getElementById("ps")
+
+        let cps = document.getElementById("cps")
+        let cp = document.getElementById("cp")
+
+        let phone = document.getElementById("phone")
+        let ph = document.getElementById("ph")
+
+        function returnvalidation() {
+            if (user_tag.value == "") {
+                us.innerHTML = "Enter the Name required"
+                us.style.color = "white"
+                return false
+            }
+            else {
+                us.innerHTML = ""
+            }
+
+
+            if (sumr.value == "") {
+                sum.innerHTML = "Enter the user required"
+                sum.style.color = "white"
+                return false
+            }
+            else {
+                sum.innerHTML = ""
+            }
+
+
+            if (mail.value == "") {
+                em.innerHTML = "Enter the email required"
+                em.style.color = "white"
+                return false
+            }
+            else {
+                em.innerHTML = ""
+            }
+
+
+
+            if (psw.value == "") {
+                ps.innerHTML = "Enter the password required"
+                ps.style.color = "white"
+                return false
+            }
+            else {
+                ps.innerHTML = ""
+            }
+
+
+            if (cps.value == "") {
+                cp.innerHTML = "Enter the Name required"
+                cp.style.color = "white"
+                return false
+            }
+            else {
+                cp.innerHTML = ""
+            }
+
+            if (psw.value != cps.value) {
+                alert("enter the valid password")
+                return false
+            }
+            if (phone.value == "") {
+                ph.innerHTML = "right a phone number"
+                ph.style.color = "white"
+                return false
+            }
+            else {
+                ph.innerHTML = ""
+            }
+
+            alert("Form submitted successfully!");
+            return true;
+        }
+    </script>
+</body>
+
+</html>

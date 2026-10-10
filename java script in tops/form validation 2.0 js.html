@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register validation form</title>
+</head>
+
+<body>
+    <div class="conatainer">
+
+        <h1> Register validation form</h1>
+        <table>
+
+            <form action="" onsubmit="return returnvalidation()">
+                <tr>
+
+                    <div>
+                        <td>
+                            <label for="">Name</label>
+                        </td>
+
+                        <td>
+
+                            <input type="text" name="" id="user">
+                        </td>
+                        <td><span id="us"></span></td>
+                    </div>
+                </tr>
+                </tr>
+                <tr>
+
+                    <div>
+
+                        <td><label for="">username</label></td>
+                        <td><input type="username" name="" id="sumr"></td>
+                        <td><span id="sum"></span></td>
+                    </div>
+
+                </tr>
+                <tr>
+
+                    <div>
+
+                        <td><label for="">email</label></td>
+                        <td><input type="email" name="" id="mail"></td>
+                        <td><span id="em"></span></td>
+                    </div>
+                </tr>
+
+                <tr>
+
+                    <div>
+
+                        <td><label for="">password</label></td>
+                        <td><input type="password" name="" id="psw"></td>
+                        <td><span id="ps"></span></td>
+                    </div>
+                </tr>
+
+                <tr>
+                    <div>
+
+                        <td><label for=""> confrom password</label></td>
+                        <td><input type="password" name="" id="cps"></td>
+                        <td><span id="cp"></span></td>
+                    </div>
+
+                </tr>
+                <tr>
+
+                    <div>
+
+                        <td><label for="" >phon</label></td>
+                        <td><input type="phone" name="" id="phone" maxlength="10"></td>
+                        <td><span id="ph"></span></td>
+                    </div>
+
+                </tr>
+                <tr>
+
+                    <td><input class="main" type="submit"></td>
+                </tr>
+            </form>
+        </table>
+    </div>
+
+    <script>
+        let user_tag = document.getElementById("user")
+        let us = document.getElementById("us")
+
+        let sumr = document.getElementById("sumr")
+        let sum = document.getElementById("sum")
+
+        let mail = document.getElementById("mail")
+        let em = document.getElementById("em")
+
+        let psw = document.getElementById("psw")
+        let ps = document.getElementById("ps")
+
+        let cps = document.getElementById("cps")
+        let cp = document.getElementById("cp")
+
+        let phone = document.getElementById("phone")
+        let ph = document.getElementById("ph")
+
+        let su = /^[A-Za-z\s]{2,50}$/;
+        let mus = /^[a-zA-Z0-9_]{3,16}$/
+        let ml = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        let pass = /^(?=.*[0-9]).{6,50}$/;
+        let poh = /^\+?[1-9]\d{9,14}$/
+
+        function returnvalidation() {
+
+            if (!su.test(user_tag.value)) {
+                us.innerHTML = "the name is not valid"
+                us.style.color = "red"
+                return false
+            }
+            else {
+                us.innerHTML = "conformation valid"
+                user_tag.style.border = "solid 4px green";
+                us.style.color = "green"
+            }
+            if (!mus.test(sumr.value)) {
+                sum.innerHTML = "the username is not valid"
+                sum.style.color = "red"
+                return false
+            }
+            else {
+                sum.innerHTML = "conformation valid"
+                sumr.style.border = "solid 4px green"
+                sum.style.color = "green"
+
+            }
+            if (!ml.test(mail.value)) {
+                em.innerHTML = "the email is not valid"
+                em.style.color = "red"
+                return false
+            }
+            else {
+                em.innerHTML = "conformation valid"
+                mail.style.border = "solid 4px green";
+                em.style.color = "green"
+            }
+            if (!pass.test(psw.value)) {
+                ps.innerHTML = "the password is not valid"
+                ps.style.color = "red"
+                return false
+            }
+            else {
+               ps.innerHTML = "conformation valid"
+               psw.style.border = "solid 4px green";
+               ps.style.color = "green"
+
+        }
+
+
+         if (!poh.test(phone.value)) {
+                ph.innerHTML = "the phone is not valid"
+                ph.style.color = "red"
+                return false
+            }
+            else {
+               ph.innerHTML = "conformation valid"
+               phone.style.border = "solid 4px green";
+               ph.style.color = "green"
+
+        }
+        if(psw.value !== cps.value){
+            alert("⚠️ give me some valid password")
+        }
+
+        alert("🏃‍➡️ Successfully form")
+    }
+    </script>
+</body>
+
+</html>

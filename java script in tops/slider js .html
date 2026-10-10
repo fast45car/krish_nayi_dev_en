@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main">
+        <img src="v1.jpg" height="50%" class="img" width="100%" alt="">
+        <img src="v2.jpg" height="90%" class="img" width="100%" alt="">
+        <img src="v3.jpg" height="90%" class="img" width="100%" alt="">
+        <img src="v4.jpg" height="90%" class="img" width="100%" alt="">
+        <img src="v5.jpg" height="90%" class="img" width="100%" alt="">
+    </div>
+    <button onclick="slide()">Next</button>
+
+    <script>
+        let img_tag = document.getElementsByTagName("img")
+
+        let meta = 0
+        console.log(img_tag)
+        function slide() {
+            for (let i = 0; i < img_tag.length; i++) {
+                img_tag[i].style.display = "none"
+            }
+            img_tag[meta].style.display = "block"
+            meta++
+
+            if (meta == 5) {
+                meta = 0
+            }
+            setTimeout(slide,10000)
+        }
+    </script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+</head>
+
+<body>
+
+    <div class="main">
+        <img src="v1.jpg" class="img" width="100%" alt="">
+        <img src="v2.jpg" class="img" width="100%" alt="">
+        <img src="v3.jpg" class="img" width="100%" alt="">
+        <img src="v4.jpg" class="img" width="100%" alt="">
+        <img src="v5.jpg" class="img" width="100%" alt="">
+    </div>
+
+    <button onclick="slide()">Next</button>
+
+    <script>
+
+        let img_tag = document.getElementsByTagName("img");
+
+        let meta = 0;
+
+        // Initially hide all images except the first
+        for (let i = 1; i < img_tag.length; i++) {
+            img_tag[i].style.display = "none";
+        }
+
+        function slide() {
+
+            // Hide all images
+            for (let i = 0; i < img_tag.length; i++) {
+                img_tag[i].style.display = "none";
+            }
+
+            // Show current image
+            img_tag[meta].style.display = "block";
+
+            // Move to next image
+            meta++;
+
+            // Start again after last image
+            if (meta >= img_tag.length) {
+                meta = 0;
+            }
+        }
+
+    </script>
+
+</body>
+</html>
+``` -->

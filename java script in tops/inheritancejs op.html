@@ -1,0 +1,106 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Parent Class
+class Animal {
+    constructor(name) {
+        this.name = name;
+    }
+
+    eat() {
+        console.log(`${this.name} can eat`);
+    }
+
+    sleep() {
+        console.log(`${this.name} can sleep`);
+    }
+}
+
+// Child Class (inherits from Animal)
+class Dog extends Animal {
+    bark() {
+        console.log(`${this.name} can bark! Woof Woof! 🐶`);
+    }
+}
+
+// Create object
+const tommy = new Dog("Tommy");
+
+// From PARENT class (inherited automatically)
+tommy.eat();     // Output: Tommy can eat
+tommy.sleep();   // Output: Tommy can sleep
+
+// From its OWN class
+tommy.bark();    // Output: Tommy can bark! Woof Woof!
+
+    </script>
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inhertance</title>
+</head>
+
+<body>
+    <script>
+        class student {
+            constructor(name) {
+                this.name = name
+            }
+            attencen() {
+                console.log(`${this.name} your registration complete`)
+            }
+            reject() {
+                console.log(`${this.name} your Registration is not possible`)
+            }
+        }
+
+        class student2 extends student {
+            constructor(number,name ) {
+                super(name)
+                this.number = number
+            }
+            roll() {
+                console.log(`${this.number} this ia the number to Registration`)
+            }
+        }
+
+        class student3 extends student2{
+            constructor(number,name,City){
+                super(number,name)
+                this.City = City
+
+            }
+            location(){
+                console.log(`${this.City} is the loaction`)
+            }
+        }
+
+        let use = new student("virat");
+        let many = new student2( 4512)
+        let loc = new student3("virat",4512,"Ahamdabad")
+        use.attencen()
+        
+        many.roll()
+        loc.location()
+        
+        console.log(many)
+        console.log(use)
+        console.log(loc)
+    </script>
+</body>
+
+</html>

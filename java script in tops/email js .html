@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form action="" onsubmit="return returnvalidation()">
+        <div>
+
+            <label for="">Email</label>
+            <input type="email" placeholder="enter email" id="eml">
+        </div>
+        <span id="mail"></span>
+        <div>
+
+            <input type="submit">
+        </div>
+    </form>
+    <script>
+        let eml = document.getElementById("eml")
+        let mail = document.getElementById("mail")
+
+        let main = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+        function returnvalidation() {
+
+            if (!main.test(eml.value)) {
+                mail.innerHTML = "the email is not valid"
+                mail.style.color = "red"
+                return false
+            }
+            else {
+                mail.innerHTML = "this is a valid id "
+                mail.style.color = "green"
+                return true
+            }
+        }
+
+    </script>
+</body>
+
+</html>

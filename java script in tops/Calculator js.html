@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" placeholder="enter number" id="demo1">
+    <input type="text" placeholder="enter number" id="demo2">
+    <h1 id="meta"></h1>
+    <hr>
+    <button onclick="sum()">+</button>
+    <button onclick="sub()">-</button>
+    <button onclick="mul()">*</button>
+    <button onclick="div()">/</button>
+    <script>
+
+        let demo1 = document.getElementById("demo1")
+        let demo2 = document.getElementById("demo2")
+        function sum() {
+
+            let total = parseInt(demo1.value) + parseInt(demo2.value)
+
+            console.log(total)
+
+            document.getElementById("meta").innerHTML = `sum : ${total}`
+        }
+
+        function sub() {
+            let total = parseInt(demo1.value) - parseInt(demo2.value)
+            console.log(total)
+            document.getElementById("meta").innerHTML = `sub : ${total}`
+        }
+
+
+        function mul() {
+
+            let total = parseInt(demo1.value) * parseInt(demo2.value)
+
+            console.log(total)
+
+            document.getElementById("meta").innerHTML = `sum : ${total}`
+        }
+
+        function div() {
+
+            let total = parseInt(demo1.value) / parseInt(demo2.value)
+
+            console.log(total)
+
+            document.getElementById("meta").innerHTML = `sum : ${total}`
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,380 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Validation Form</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 600px;
+            margin: 50px auto;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        td {
+            padding: 10px;
+        }
+
+        input {
+            padding: 8px;
+            width: 250px;
+        }
+
+        span {
+            font-size: 14px;
+        }
+
+        .main {
+            width: 100px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Register Validation Form</h1>
+
+        <form action="" onsubmit="return returnvalidation()">
+
+            <table>
+
+                <!-- Name -->
+                <tr>
+                    <td>
+                        <label for="user">Name</label>
+                    </td>
+
+                    <td>
+                        <input type="text" id="user">
+                    </td>
+
+                    <td>
+                        <span id="us"></span>
+                    </td>
+                </tr>
+
+                <!-- Username -->
+                <tr>
+                    <td>
+                        <label for="sumr">Username</label>
+                    </td>
+
+                    <td>
+                        <input type="text" id="sumr">
+                    </td>
+
+                    <td>
+                        <span id="sum"></span>
+                    </td>
+                </tr>
+
+                <!-- Email -->
+                <tr>
+                    <td>
+                        <label for="mail">Email</label>
+                    </td>
+
+                    <td>
+                        <input type="email" id="mail">
+                    </td>
+
+                    <td>
+                        <span id="em"></span>
+                    </td>
+                </tr>
+
+                <!-- Password -->
+                <tr>
+                    <td>
+                        <label for="psw">Password</label>
+                    </td>
+
+                    <td>
+                        <input type="password" id="psw">
+                    </td>
+
+                    <td>
+                        <span id="ps"></span>
+                    </td>
+                </tr>
+
+                <!-- Confirm Password -->
+                <tr>
+                    <td>
+                        <label for="cps">Confirm Password</label>
+                    </td>
+
+                    <td>
+                        <input type="password" id="cps">
+                    </td>
+
+                    <td>
+                        <span id="cp"></span>
+                    </td>
+                </tr>
+
+                <!-- Phone -->
+                <tr>
+                    <td>
+                        <label for="phone">Phone</label>
+                    </td>
+
+                    <td>
+                        <input type="tel" id="phone">
+                    </td>
+
+                    <td>
+                        <span id="ph"></span>
+                    </td>
+                </tr>
+
+                <!-- Submit -->
+                <tr>
+                    <td colspan="3">
+                        <input class="main" type="submit" value="Register">
+                    </td>
+                </tr>
+
+            </table>
+
+        </form>
+
+    </div>
+
+
+    <script>
+
+        // Input elements
+        let user_tag = document.getElementById("user");
+        let us = document.getElementById("us");
+
+        let sumr = document.getElementById("sumr");
+        let sum = document.getElementById("sum");
+
+        let mail = document.getElementById("mail");
+        let em = document.getElementById("em");
+
+        let psw = document.getElementById("psw");
+        let ps = document.getElementById("ps");
+
+        let cps = document.getElementById("cps");
+        let cp = document.getElementById("cp");
+
+        let phone = document.getElementById("phone");
+        let ph = document.getElementById("ph");
+
+
+        // Regular Expressions
+
+        // Name: 2 to 50 letters and spaces
+        let su = /^[A-Za-z\s]{2,50}$/;
+
+        // Username: 3 to 16 letters, numbers and underscore
+        let mus = /^[A-Za-z0-9_]{3,16}$/;
+
+        // Email
+        let ml = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
+
+        // Password:
+        // Minimum 6 characters
+        // At least one letter
+        // At least one number
+        let pass = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$/;
+
+        // Phone: 10 to 15 digits, optional +
+        let poh = /^\+?[1-9]\d{9,14}$/;
+
+
+        function returnvalidation() {
+
+            // Clear previous messages
+            us.innerHTML = "";
+            sum.innerHTML = "";
+            em.innerHTML = "";
+            ps.innerHTML = "";
+            cp.innerHTML = "";
+            ph.innerHTML = "";
+
+
+            // ---------------- NAME ----------------
+
+            if (user_tag.value.trim() === "") {
+
+                us.innerHTML = "Name is required";
+                us.style.color = "red";
+                return false;
+
+            }
+
+            if (!su.test(user_tag.value.trim())) {
+
+                us.innerHTML = "Enter a valid name";
+                us.style.color = "red";
+                return false;
+
+            }
+
+            else {
+
+                us.innerHTML = "Valid";
+                us.style.color = "green";
+
+            }
+
+
+            // ---------------- USERNAME ----------------
+
+            if (sumr.value.trim() === "") {
+
+                sum.innerHTML = "Username is required";
+                sum.style.color = "red";
+                return false;
+
+            }
+
+            if (!mus.test(sumr.value.trim())) {
+
+                sum.innerHTML = "Username must be 3-16 characters";
+                sum.style.color = "red";
+                return false;
+
+            }
+
+            else {
+
+                sum.innerHTML = "Valid";
+                sum.style.color = "green";
+
+            }
+
+
+            // ---------------- EMAIL ----------------
+
+            if (mail.value.trim() === "") {
+
+                em.innerHTML = "Email is required";
+                em.style.color = "red";
+                return false;
+
+            }
+
+            if (!ml.test(mail.value.trim())) {
+
+                em.innerHTML = "Enter a valid email";
+                em.style.color = "red";
+                return false;
+
+            }
+
+            else {
+
+                em.innerHTML = "Valid";
+                em.style.color = "green";
+
+            }
+
+
+            // ---------------- PASSWORD ----------------
+
+            if (psw.value === "") {
+
+                ps.innerHTML = "Password is required";
+                ps.style.color = "red";
+                return false;
+
+            }
+
+            if (!pass.test(psw.value)) {
+
+                ps.innerHTML = "Password must contain letter + number (min 6)";
+                ps.style.color = "red";
+                return false;
+
+            }
+
+            else {
+
+                ps.innerHTML = "Valid";
+                ps.style.color = "green";
+
+            }
+
+
+            // ---------------- CONFIRM PASSWORD ----------------
+
+            if (cps.value === "") {
+
+                cp.innerHTML = "Please confirm password";
+                cp.style.color = "red";
+                return false;
+
+            }
+
+            if (cps.value !== psw.value) {
+
+                cp.innerHTML = "Passwords do not match";
+                cp.style.color = "red";
+                return false;
+
+            }
+
+            else {
+
+                cp.innerHTML = "Password matched";
+                cp.style.color = "green";
+
+            }
+
+
+            // ---------------- PHONE ----------------
+
+            if (phone.value.trim() === "") {
+
+                ph.innerHTML = "Phone number is required";
+                ph.style.color = "red";
+                return false;
+
+            }
+
+            if (!poh.test(phone.value.trim())) {
+
+                ph.innerHTML = "Enter a valid phone number";
+                ph.style.color = "red";
+                return false;
+
+            }
+
+            else {
+
+                ph.innerHTML = "Valid";
+                ph.style.color = "green";
+
+            }
+
+
+            // ---------------- SUCCESS ----------------
+
+            alert("Registration successful!");
+
+            return true;
+        }
+
+    </script>
+
+</body>
+
+</html>
+```
