@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Favourite Songs</title>
+</head>
+<body>
+    <script>
+        let song = [
+            "teri meri",
+            "karn arjun",
+            "mf ghabharu",
+            "52 bars",
+            "winning speech"
+        ];
+
+        for (let i = 0; i < song.length; i++) {
+            console.log("My favourite song: " + song[i]);
+        }
+    </script>
+</body>
+</html>
