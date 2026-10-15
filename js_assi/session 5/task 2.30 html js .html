@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+body {
+            font-family: Arial, sans-serif;
+            padding: 30px;
+        }
+
+        .playlist-button {
+            display: block;
+            width: 250px;
+            margin: 10px 0;
+            padding: 12px 20px;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+</style>
+
+<body>
+    <script>
+        function createbutton(songname, color) {
+            const button = document.createElement("button")
+
+            button.textContent = songname;
+            button.style.backgroundColor = color;
+            button.className = "playlist-button ";
+            return button;
+        }
+      const songname1 = createbutton("keasriya","#93C418")
+      const songname2 = createbutton("pal pal","#1840C4")
+      const songname3 = createbutton("jaimin dhabhoda","#E01032")
+
+
+      document.body.appendChild(songname1)
+      document.body.appendChild(songname2)
+      document.body.appendChild(songname3)
+    </script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+

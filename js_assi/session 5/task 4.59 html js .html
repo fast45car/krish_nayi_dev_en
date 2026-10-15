@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="meta"></h1>
+    <script>
+        const  formatFollowers = (number) => {
+               if(number >= 1000){
+                return (number / 1000).toFixed(3) + "k";
+               }
+               return number;
+            }
+            document.getElementById("meta").textContent = 
+            formatFollowers(2500);
+        
+    </script>
+</body>
+</html>
