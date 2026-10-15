@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .menu-item {
+        width: 300px;
+        margin: 15px auto;
+        padding: 15px 20px;
+        border-radius: 8px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        font-family: Arial, sans-serif;
+    }
+
+    .menu-item h3 {
+        margin: 0 0 8px;
+    }
+
+    .menu-item p {
+        margin: 0;
+        color: #e23744;
+        font-weight: bold;
+    }
+</style>
+
+<body>
+    <script>
+        function showMenuItem(name, price) {
+            const menu = document.createElement("div")
+
+            menu.className = "menu item";
+            menu.innerHTML = `
+           <h1>${name}</h1>
+           <h3>${price}</h3>`
+            return menu;
+        }
+        const item1 = showMenuItem("pizza", 345);
+        const item2 = showMenuItem("dabeli", 145);
+        const item3 = showMenuItem("vadapuv", 250);
+
+
+        document.body.appendChild(item1)
+        document.body.appendChild(item2)
+        document.body.appendChild(item3)
+
+    </script>
+</body>
+
+</html>
