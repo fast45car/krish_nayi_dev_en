@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class player {
+            constructor(name) {
+                this.name = name;
+            }
+            allow() {
+                console.log(`${this.name} your selection conform`)
+            }
+
+            rejection() {
+                console.log(`${this.name}your selection not conform`)
+            }
+        }
+
+        const meta = new player("rohit");
+        const use = new player("hardik");
+        meta.allow()
+        use.rejection()
+        console.log(meta)
+        console.log(use)
+    </script>
+</body>
+
+</html>
