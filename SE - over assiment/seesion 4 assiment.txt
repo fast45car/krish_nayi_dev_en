@@ -1,0 +1,56 @@
+1. List all 6 phases of SDLC in order with one line about each
+
+
+Planning – Establish the project's scope, objectives, feasibility, timeline, and budget.
+
+Requirements Analysis – Elicit, document, and validate the functional and technical needs of stakeholders.
+
+Design – Translate requirements into architectural blueprints, database schemas, and user interface specifications.
+
+Implementation (Coding) – Convert the design into executable source code through actual development.
+
+Testing – Execute systematic validation to identify defects, ensure functionality, and verify performance against requirements.
+
+Deployment & Maintenance – Release the product to production and provide ongoing bug fixes, enhancements, and operational support.
+
+
+
+2. Write 3 differences between Agile and Waterfall models.
+
+Approach to project flow – Waterfall follows a rigid, linear sequence (each phase must be fully completed before the next begins), whereas Agile uses iterative, incremental cycles (sprints) where development and testing happen concurrently.
+
+Flexibility for changes – Waterfall has low adaptability; changes are difficult and costly to implement once a phase is finished, while Agile embraces changing requirements at any stage, even late in the development process.
+
+Delivery and customer involvement – Waterfall delivers the final product only at the very end, with customer input primarily at the start and finish, whereas Agile delivers working software frequently (e.g., every 2–4 weeks) and involves continuous customer feedback throughout the project.
+
+
+3. Name the 3 main Scrum roles and write one line about the responsibility of each.
+
+Product Owner – Maximizes product value by managing the Product Backlog, prioritizing work, and ensuring the development team builds what stakeholders truly need.
+
+Scrum Master – Serves as a coach and facilitator, ensuring the Scrum framework is followed, removing impediments, and fostering a productive, self-organizing team environment.
+
+Development Team – A cross-functional group of professionals who self-organize to design, build, test, and deliver a potentially releasable increment of working software by the end of each Sprint.
+
+
+4. What is a Sprint in Scrum? Mention its typical duration.
+
+
+In Scrum, a **Sprint** is a time-boxed iteration during which the Development Team works to complete a set of backlog items and deliver a potentially shippable, working product increment. Each Sprint begins with a planning event and ends with a review and retrospective, and its scope is fixed—no changes are made that would endanger the Sprint Goal.
+
+The **typical duration** is **1 to 4 weeks** (the Scrum Guide specifies a maximum of one calendar month). In practice, most teams settle on **2-week** Sprints, as this offers a good balance between frequent feedback and enough time to deliver meaningful value.
+
+
+5.What do these Jira board columns mean: To Do, In Progress, Done, Backlog?
+
+
+Here’s what each of those Jira board columns typically means in an Agile workflow:
+
+Backlog – This is the holding area for all future work items (user stories, bugs, tasks, epics) that are prioritized by the Product Owner but are not yet committed to a specific Sprint. Items here are not currently being worked on and may be refined over time.
+
+To Do – These are items that have been pulled into the current Sprint (or active workflow) and are fully defined, estimated, and ready to be worked on, but have not yet been started by anyone on the Development Team.
+
+In Progress – This column represents items that are actively being worked on by one or more team members at this very moment. In Scrum, teams often limit the number of items here (WIP limits) to maintain focus.
+
+Done – This column signifies that all work for the item is completely finished – meaning it has been coded, tested, reviewed, and meets the team's agreed-upon Definition of Done. It is now ready for release or has already been deployed to production.
+
